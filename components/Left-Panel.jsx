@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
 export default function LeftPanel() {
-    const [index, setIndex] = useState(false);
+    const [activeIndex, setActiveIndex] = useState();
 
     return (
         <>
             <div className="equities">
                 <h1>U.S. Equity Markets</h1>
+
                 <div className="header">
                     Major Indices & ETFs
                     <span>%</span>
